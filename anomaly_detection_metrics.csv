@@ -1,0 +1,5 @@
+metric,value
+Precision,0.6
+Recall,0.4286
+Known test anomalies,35.0
+Model flagged anomalies,25.0
