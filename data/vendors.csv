@@ -1,0 +1,21 @@
+vendor_id,vendor_name,category,risk_rating
+V001,Vendor 01,IT,Low
+V002,Vendor 02,Travel,High
+V003,Vendor 03,Facilities,Medium
+V004,Vendor 04,Office Supplies,Medium
+V005,Vendor 05,Office Supplies,Low
+V006,Vendor 06,Travel,Low
+V007,Vendor 07,IT,Medium
+V008,Vendor 08,Facilities,Low
+V009,Vendor 09,IT,Medium
+V010,Vendor 10,IT,Medium
+V011,Vendor 11,Facilities,Medium
+V012,Vendor 12,Travel,Low
+V013,Vendor 13,Facilities,High
+V014,Vendor 14,Travel,High
+V015,Vendor 15,Facilities,Medium
+V016,Vendor 16,Travel,Low
+V017,Vendor 17,Facilities,Low
+V018,Vendor 18,IT,Low
+V019,Vendor 19,Travel,Low
+V020,Vendor 20,Office Supplies,Medium
