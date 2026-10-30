@@ -53,8 +53,7 @@ The dashboard includes:
 - `tableau/` – Tableau workbook files.
 - `process/` – Procure-to-Pay process map.
 - `docs/` – Project worklog.
-- `alteryx/` – Alteryx project materials.
-
+- `alteryx/` – Reserved for future Alteryx materials.
 ## Business Value
 This project demonstrates how procurement data can be transformed into actionable insights to improve spend visibility, identify invoice exceptions, and strengthen financial review processes.
 
