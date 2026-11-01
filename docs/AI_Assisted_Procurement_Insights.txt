@@ -1,0 +1,84 @@
+PROCUREMENT SPEND AND RISK ANALYTICS
+AI-ASSISTED INSIGHTS INPUT
+=============================================
+Generated: 2026-11-01 11:35
+
+PROJECT CONTEXT
+Analysis of synthetic purchase-to-pay procurement data.
+The dataset contains purchase orders, vendors, receipts, invoices and payments.
+
+KEY FINDINGS
+- Duplicate invoice analysis flagged 20 rows for review.
+- Invoice matching analysis flagged 15 records for review.
+
+IMPORTANT NOTES
+- The dataset is synthetic, not real company data.
+- Flagged records are review candidates, not confirmed fraud.
+- Findings should be validated by a human analyst.
+
+ANALYST REVIEW QUESTIONS
+1. What controls could reduce duplicate invoice submissions?
+2. How can automated invoice matching improve efficiency?
+3. What approval controls could reduce payment risk?
+4. Which procurement metrics should management monitor?
+# PROCUREMENT SPEND AND RISK ANALYTICS
+## Management Insights and Recommendations
+
+### 1. Project Overview
+This project analyses synthetic purchase-to-pay (P2P) procurement data, including purchase orders, vendors, receipts, invoices and payments.
+
+The objective is to identify potential control weaknesses, improve invoice validation and support better procurement decisions.
+
+### 2. Key Analytical Findings
+
+**Duplicate Invoice Checks**
+- 20 duplicate invoice rows were flagged.
+- These represent potential duplicate submissions requiring investigation.
+- Recommended action: introduce duplicate checks using invoice number, vendor ID, invoice date and invoice amount.
+
+**Invoice Matching**
+- 510 invoice records were analysed.
+- 15 records were flagged for review based on invoice-to-purchase-order amount differences.
+- Recommended action: automate three-way matching between purchase orders, goods receipts and invoices.
+
+**Vendor Spend Concentration**
+- Vendor V003 recorded the highest purchase-order spend of 983,439 across 34 orders.
+- Its share was approximately 7.7% of total purchase-order spend.
+- Recommended action: monitor vendor concentration and review high-value purchasing patterns.
+
+### 3. Recommended Process Improvements
+
+1. **Duplicate Invoice Prevention:** Check invoice identifiers and vendor details before accepting invoices.
+2. **Automated Three-Way Matching:** Compare purchase orders, receipts and invoices before payment approval.
+3. **Exception-Based Review:** Route mismatched or duplicate records to an analyst for investigation.
+4. **Risk-Based Approvals:** Apply additional approval checks to high-value or unusual transactions.
+5. **Vendor Monitoring:** Regularly review vendor spend, order frequency and concentration.
+
+### 4. Suggested Management KPIs
+
+- Total procurement spend
+- Spend by vendor
+- Duplicate invoice records flagged
+- Invoice mismatch rate
+- Purchase-order versus received quantity variance
+- Invoice-to-payment processing time
+- Percentage of invoices requiring manual review
+
+### 5. GenAI-Assisted Analysis
+
+The analytical findings were used as inputs for AI-assisted interpretation and recommendation development.
+
+The recommendations focus on procurement controls, process efficiency, vendor monitoring and management reporting. They should be reviewed and validated by a human analyst before implementation.
+
+### 6. Data and Methodology Limitations
+
+- The dataset is synthetic and does not represent actual company transactions.
+- Test anomalies were intentionally introduced to demonstrate detection logic.
+- Flagged records are review candidates, not confirmed fraud or financial loss.
+- The analysis does not establish actual cost savings or fraud prevention outcomes.
+
+### 7. Conclusion
+
+The project demonstrates how Python-based data analysis, SQL validation and Tableau dashboards can support procurement spend visibility and risk monitoring.
+
+Combining rule-based anomaly detection with AI-assisted interpretation can help analysts prioritise exceptions, recommend process improvements and communicate findings to management.
