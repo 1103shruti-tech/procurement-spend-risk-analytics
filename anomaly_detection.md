@@ -74,8 +74,7 @@ Identify unusual invoice transactions using the Isolation Forest machine learnin
 
 \## Interpretation
 
-The model identified unusual invoice records for further review. Precision of 60% indicates that 60% of model flags matched the synthetic test labels. Recall of 42.86% indicates that the model detected 42.86% of the known synthetic anomalies.
-
+These metrics measure agreement with the rule-based synthetic test labels, not performance against independently verified real-world fraud cases.
 
 
 \## Limitations
@@ -92,11 +91,9 @@ The model identified unusual invoice records for further review. Precision of 60
 
 
 
-\## Output Files
-
-\- `data/processed/anomaly\_detection\_results.csv`
-
-\- `data/processed/anomaly\_detection\_metrics.csv`
+## Output Files
+- `anomaly_detection_results.csv`
+- `anomaly_detection_metrics.csv`
 
 
 
