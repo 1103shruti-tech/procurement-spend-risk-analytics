@@ -42,3 +42,8 @@
 - Added vendor-wise invoice amount discrepancy analysis.
 - Improved dashboard layout and sizing for desktop viewing.
 - Published the updated Procurement Spend and Vendor Risk Analytics dashboard to Tableau Public.
+- ### November 1, 2026
+- Generated an AI-assisted procurement insights input report using Python.
+- Used the analytical findings to develop management recommendations covering duplicate invoice controls, automated invoice matching, vendor spend monitoring and payment risk.
+- Documented the recommendations and limitations in AI_Assisted_Procurement_Insights.txt.
+- Clarified that the dataset is synthetic and flagged records require human review; they are not confirmed fraud.
