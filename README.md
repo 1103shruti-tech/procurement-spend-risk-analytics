@@ -1,23 +1,25 @@
 # Procurement Spend and Vendor Risk Analytics
 
 ## Project Overview
-An end-to-end procurement analytics project focused on analyzing purchase order spend, monitoring vendor activity, and identifying invoice exceptions and duplicate records.
+An end-to-end procurement analytics project focused on purchase-to-pay (P2P) spend analysis, vendor monitoring, invoice exception detection, duplicate invoice identification, and procurement risk visibility.
 
-The project uses synthetic Procure-to-Pay (P2P) data to demonstrate how data analytics can support procurement operations, financial controls, and vendor risk monitoring.
+The project uses synthetically generated procurement data to demonstrate how Python, SQL, and Tableau can support procurement operations, financial controls, and data-driven decision-making.
 
 ## Business Objectives
 - Analyze procurement spend across vendors.
-- Identify high-spend vendors.
+- Identify high-spend vendors and monitor spend concentration.
 - Detect invoice amounts exceeding purchase order amounts.
 - Identify duplicate invoice records.
-- Support invoice exception review and procurement controls.
+- Analyze procurement exceptions and potential control weaknesses.
+- Present findings through dashboards and management recommendations.
 
 ## Tools and Technologies
-- **Python:** Data generation, data cleaning, and analysis.
-- **SQL (SQLite):** Data querying and exception analysis.
-- **Tableau Public:** Interactive dashboard and data visualization.
-- **Excel:** Initial data exploration.
+- **Python:** Synthetic data generation, data cleaning, spend analysis, and anomaly detection.
+- **SQL (SQLite):** Data querying, validation, and exception analysis.
+- **Tableau:** Procurement dashboards and data visualization.
+- **Excel:** Initial data exploration and validation.
 - **Draw.io:** Procure-to-Pay process mapping.
+- **ChatGPT:** AI-assisted interpretation of analytical findings and development of management recommendations, with human review.
 
 ## Dataset
 The project uses synthetic procurement datasets:
@@ -34,29 +36,47 @@ The project uses synthetic procurement datasets:
 - Total purchase order spend: 12,744,797 (currency not specified).
 - Highest-spend vendor: V003, with 983,439 across 34 purchase orders.
 - 15 invoices flagged where invoice amounts exceeded purchase order amounts.
-- 10 duplicated invoice IDs identified, each appearing twice.
+- 10 unique duplicated invoice IDs identified, resulting in 20 rows in the duplicate-invoice review file.
 
-These findings represent review flags in synthetic data and do not establish fraud or actual vendor misconduct.
+These are analytical review flags in synthetic data. They do not establish fraud, financial loss, or actual vendor misconduct.
 
-## Tableau Dashboard
-The dashboard includes:
-- Invoice exception KPI showing 15 flagged invoices.
+## Tableau Dashboards
+The project includes three dashboards:
+
+1. **Executive Overview:** Vendor spend and invoice exception visibility.
+2. **Invoice & Payment Risk:** Invoice discrepancy KPI, vendor-wise discrepancies, and payment analysis.
+3. **Procurement Efficiency:** Purchase order versus received quantity analysis.
+
+Dashboard screenshots and the packaged Tableau workbook are available in the `tableau/` directory.
+
+## Python and SQL Analysis
 - Vendor spend analysis.
-- Vendor-wise invoice amount discrepancy analysis.
+- Invoice amount mismatch detection.
+- Duplicate invoice identification.
+- Anomaly detection analysis.
+- SQL-based validation and summary reporting.
 
-**[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/shruti.mishra3540/viz/Procurement_Spend_Risk_Analytics/Dashboard1)**
+## AI-Assisted Management Insights
+The analytical findings were used as inputs for AI-assisted interpretation and management recommendations, including:
+- Duplicate invoice prevention controls.
+- Automated three-way invoice matching.
+- Exception-based investigation.
+- Risk-based payment approvals.
+- Vendor spend monitoring and management KPIs.
+
+See `docs/AI_Assisted_Procurement_Insights.txt` for the report. Recommendations require human validation before implementation.
 
 ## Project Structure
-- `data/` – Raw and processed datasets.
+- `data/` – Raw and processed synthetic datasets.
 - `python/` – Data generation and analysis scripts.
 - `sql/` – SQL queries and SQLite database.
-- `tableau/` – Tableau workbook files.
+- `tableau/` – Packaged Tableau workbook and dashboard screenshots.
 - `process/` – Procure-to-Pay process map.
-- `docs/` – Project worklog.
-- `alteryx/` – Reserved for future Alteryx materials.
+- `docs/` – Project worklog and AI-assisted insights report.
+- `alteryx/` – Reserved for potential future Alteryx materials.
+
 ## Business Value
-This project demonstrates how procurement data can be transformed into actionable insights to improve spend visibility, identify invoice exceptions, and strengthen financial review processes.
+This project demonstrates how procurement data can be transformed into actionable insights to improve spend visibility, identify invoice exceptions, monitor vendor concentration, and strengthen financial review processes.
 
 ## Data Disclaimer
-All datasets are synthetically generated for learning and portfolio demonstration purposes. They do not represent actual company, supplier, or transaction records.# procurement-spend-risk-analytics
-Procurement spend, vendor risk, anomaly detection and GenAI analytics portfolio project.
+All datasets are synthetically generated for learning and portfolio demonstration purposes. They do not represent actual company, supplier, or transaction records. Anomalies were intentionally introduced for testing detection logic.
