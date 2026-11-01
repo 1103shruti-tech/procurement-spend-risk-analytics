@@ -80,3 +80,22 @@ This project demonstrates how procurement data can be transformed into actionabl
 
 ## Data Disclaimer
 All datasets are synthetically generated for learning and portfolio demonstration purposes. They do not represent actual company, supplier, or transaction records. Anomalies were intentionally introduced for testing detection logic.
+## Tableau Dashboard Screenshots
+
+### Executive Overview
+![Executive Overview](tableau/Executive_Overview.png)
+
+### Invoice & Payment Risk
+![Invoice and Payment Risk](tableau/Invoice_Payment_Risk.png)
+
+### Procurement Efficiency
+![Procurement Efficiency](tableau/Procurement_Efficiency.png)
+
+### Additional Worksheet Visualizations
+- [Vendor Spend Analysis](tableau/Vendor_Spend_Analysis.png)
+- [Invoice Discrepancy KPI](tableau/Invoice_Discrepancy_KPI.png)
+- [Invoice Mismatch Analysis](tableau/Invoice_Mismatch_Analysis.png)
+- [Payment Analysis by Invoice](tableau/Payment_Analysis_by_Invoice.png)
+- [Purchase Order Quantity Compliance](tableau/PO_Quantity_Compliance.png)
+
+**Packaged Tableau Workbook:** [Procurement_Spend_Risk_Analytics.twbx](tableau/Procurement_Spend_Risk_Analytics.twbx)
